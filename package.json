@@ -10,10 +10,16 @@
     "task3": "node task3.js",
     "task4": "node task4.js",
     "task5": "node task5.js",
-    "lab14": "node task1.js && node task2.js && node task3.js && node task4.js && node task5.js"
+    "lab14": "node task1.js && node task2.js && node task3.js && node task4.js && node task5.js",
+    "server": "node server5.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "dependencies": {
+    "@koa/router": "^15.7.0",
+    "koa": "^3.2.1",
+    "koa-bodyparser": "^4.4.1"
+  }
 }
