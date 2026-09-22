@@ -1,0 +1,132 @@
+{
+  "variant": 6,
+  "directory": ".",
+  "date": "2026-09-21T18:09:28.375Z",
+  "stats": {
+    "folders": 18,
+    "files": 81,
+    "totalBytes": 6420961,
+    "extensions": {
+      "без расширения": {
+        "count": 1,
+        "bytes": 86
+      },
+      ".js": {
+        "count": 20,
+        "bytes": 32048
+      },
+      ".json": {
+        "count": 10,
+        "bytes": 6896
+      },
+      ".part0": {
+        "count": 1,
+        "bytes": 524288
+      },
+      ".part1": {
+        "count": 1,
+        "bytes": 524288
+      },
+      ".part2": {
+        "count": 1,
+        "bytes": 151424
+      },
+      ".txt": {
+        "count": 21,
+        "bytes": 4081446
+      },
+      ".html": {
+        "count": 2,
+        "bytes": 30
+      },
+      ".jpg": {
+        "count": 6,
+        "bytes": 1100030
+      },
+      ".gif": {
+        "count": 2,
+        "bytes": 16
+      },
+      ".png": {
+        "count": 4,
+        "bytes": 30
+      },
+      ".log": {
+        "count": 2,
+        "bytes": 28
+      },
+      ".css": {
+        "count": 2,
+        "bytes": 38
+      },
+      ".md": {
+        "count": 8,
+        "bytes": 313
+      }
+    }
+  },
+  "top5Largest": [
+    {
+      "name": "data_6.txt",
+      "path": "data_6.txt",
+      "size": 2878050,
+      "ext": ".txt"
+    },
+    {
+      "name": "big_file.txt",
+      "path": "source_6/documents/big_file.txt",
+      "size": 1200000,
+      "ext": ".txt"
+    },
+    {
+      "name": "large_photo.jpg",
+      "path": "backup_6/media/large_photo.jpg",
+      "size": 550000,
+      "ext": ".jpg"
+    },
+    {
+      "name": "large_photo.jpg",
+      "path": "source_6/media/large_photo.jpg",
+      "size": 550000,
+      "ext": ".jpg"
+    },
+    {
+      "name": "big_file.txt.part0",
+      "path": "backup_6/documents/big_file.txt.part0",
+      "size": 524288,
+      "ext": ".part0"
+    }
+  ],
+  "top5Smallest": [
+    {
+      "name": "changelog.txt",
+      "path": "backup_6/documents/changelog.txt",
+      "size": 6,
+      "ext": ".txt"
+    },
+    {
+      "name": "changelog.txt",
+      "path": "source_6/documents/changelog.txt",
+      "size": 6,
+      "ext": ".txt"
+    },
+    {
+      "name": "pic1.png",
+      "path": "backup_6/media/pic1.png",
+      "size": 7,
+      "ext": ".png"
+    },
+    {
+      "name": "pic2.jpg",
+      "path": "backup_6/media/pic2.jpg",
+      "size": 7,
+      "ext": ".jpg"
+    },
+    {
+      "name": "pic1.png",
+      "path": "source_6/media/pic1.png",
+      "size": 7,
+      "ext": ".png"
+    }
+  ]
+}
