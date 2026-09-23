@@ -18,6 +18,18 @@ router.get('/api/users', async (ctx) => {
   ctx.body = users;
 });
 
+router.get('/api/users/:id', async (ctx) => {
+  const userId = parseInt(ctx.params.id, 10);
+  const user = users.find(u => u.id === userId);
+  if (!user) {
+    ctx.status = 404;
+    ctx.body = { error: 'Пользователь не найден', status: 404 };
+    return;
+  }
+  ctx.status = 200;
+  ctx.body = user;
+});
+
 router.post('/api/users', async (ctx) => {
   const { name, group } = ctx.request.body || {};
 
