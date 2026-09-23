@@ -8,8 +8,8 @@ const PORT = 3000;
 
 let students = [
   { id: 1, name: 'Анна', group: '477 (ББМО-01-23)', course: 2 },
-  { id: 2, name: 'Cава', group: '477 (ББМО-01-23)', course: 2 },
-  { id: 3, name: 'Ббаывавыа', group: '477 (ББМО-02-23)', course: 3 }
+  { id: 2, name: 'Иван', group: '477 (ББМО-01-23)', course: 2 },
+  { id: 3, name: 'Сергей', group: '477 (ББМО-02-23)', course: 3 }
 ];
 let nextStudentId = 4;
 
