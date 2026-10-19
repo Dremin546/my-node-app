@@ -7,3 +7,5 @@ source_*/
 backup_*/
 project_*/
 operations.log
+.postman/
+postman/
