@@ -6,3 +6,4 @@ data_*.txt
 source_*/
 backup_*/
 project_*/
+operations.log

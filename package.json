@@ -11,7 +11,12 @@
     "task4": "node task4.js",
     "task5": "node task5.js",
     "lab14": "node task1.js && node task2.js && node task3.js && node task4.js && node task5.js",
-    "server": "node server5.js"
+    "server": "node server5.js",
+    "express1": "node express1.js",
+    "express2": "node express2.js",
+    "express3": "node express3.js",
+    "express4": "node express4.js",
+    "express5": "node express5.js"
   },
   "keywords": [],
   "author": "",
@@ -19,7 +24,12 @@
   "type": "commonjs",
   "dependencies": {
     "@koa/router": "^15.7.0",
+    "compression": "^1.8.2",
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.7.1",
+    "jsonwebtoken": "^9.0.3",
     "koa": "^3.2.1",
-    "koa-bodyparser": "^4.4.1"
+    "koa-bodyparser": "^4.4.1",
+    "swagger-ui-express": "^5.0.1"
   }
 }
