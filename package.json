@@ -5,6 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "cli1": "node cli1.js",
+    "cli2": "node cli2.js",
+    "cli3": "node cli3.js",
+    "cli4": "node cli4.js",
     "task1": "node task1.js",
     "task2": "node task2.js",
     "task3": "node task3.js",
@@ -24,12 +28,17 @@
   "type": "commonjs",
   "dependencies": {
     "@koa/router": "^15.7.0",
+    "chalk": "^4.1.2",
+    "cli-progress": "^3.12.0",
+    "commander": "^15.0.0",
     "compression": "^1.8.2",
     "express": "^5.3.0",
     "express-rate-limit": "^8.7.1",
+    "inquirer": "^8.2.6",
     "jsonwebtoken": "^9.0.3",
     "koa": "^3.2.1",
     "koa-bodyparser": "^4.4.1",
+    "ora": "^5.4.1",
     "swagger-ui-express": "^5.0.1"
   }
 }
