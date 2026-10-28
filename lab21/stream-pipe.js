@@ -7,14 +7,14 @@ async function runTasks() {
     const w1 = fs.createWriteStream('lab21/output-pipe.txt');
     r1.pipe(w1);
     await new Promise(resolve => w1.on('finish', resolve));
-    console.log("✔ Копирование завершено");
+    console.log("Копирование завершено");
 
     console.log("\n=== Демонстрация pipe() с ошибкой ===");
     const missing = fs.createReadStream('lab21/missing.txt');
     const w2 = fs.createWriteStream('lab21/output-pipe-error.txt');
     missing.on('error', (err) => {
-        console.log("✖ Ошибка:", err.message);
-        console.log("⚠ Внимание: pipe() не закрыл целевой поток!");
+        console.log("Ошибка:", err.message);
+        console.log("Внимание: pipe() не закрыл целевой поток!");
     });
     missing.pipe(w2);
     await new Promise(resolve => setTimeout(resolve, 500));
@@ -24,8 +24,8 @@ async function runTasks() {
     const w3 = fs.createWriteStream('lab21/output-pipeline.txt');
     await new Promise(resolve => {
         pipeline(r3, w3, (err) => {
-            if (err) console.error("✖ Ошибка:", err.message);
-            else console.log("✔ Копирование завершено");
+            if (err) console.error("Ошибка:", err.message);
+            else console.log("Копирование завершено");
             resolve();
         });
     });
@@ -36,8 +36,8 @@ async function runTasks() {
     await new Promise(resolve => {
         pipeline(missing2, w4, (err) => {
             if (err) {
-                console.log("✖ Ошибка:", err.message);
-                console.log("✔ Все потоки автоматически закрыты");
+                console.log("Ошибка:", err.message);
+                console.log("Все потоки автоматически закрыты");
             }
             resolve();
         });
