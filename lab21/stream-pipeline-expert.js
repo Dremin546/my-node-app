@@ -45,5 +45,5 @@ fs.writeFileSync('lab21/students.csv', 'id,name,group,course,grade,averageGrade\
 
 pipeline(new StudentReadable(), validate, enrich, filter, format, writable, (err) => {
     if (err) console.error("Ошибка:", err);
-    else console.log("✔ Обработка завершена. Файл: students.csv");
+    else console.log("Обработка завершена. Файл: students.csv");
 });
