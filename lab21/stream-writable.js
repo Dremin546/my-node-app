@@ -24,7 +24,6 @@ function writeData() {
     console.log(`write() вернул: ${canWrite}`);
     i++;
     if (!canWrite) {
-      console.log("... буфер переполнен!");
       return;
     }
   }

@@ -30,7 +30,3 @@ readable.on('end', () => {
   console.log("[END] Поток завершён");
   console.log(`Всего получено чанков: ${index}`);
 });
-
-readable.on('error', (err) => {
-  console.error("Ошибка:", err);
-});
