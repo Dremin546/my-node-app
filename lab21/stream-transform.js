@@ -1,4 +1,4 @@
-const { Readable, Transform, Writable } = require('stream');
+const { Readable, Transform } = require('stream');
 
 class UpperCaseTransform extends Transform {
     constructor() { super({ readableObjectMode: true, writableObjectMode: true }); }
@@ -8,7 +8,7 @@ class UpperCaseTransform extends Transform {
     }
 }
 
-const readable = Readable.from(['группа ббмо-01-23', 'студент иванов']);
+const readable = Readable.from(['группа ббмо-01-23', 'студент вадим']);
 const upper = new UpperCaseTransform();
 upper.on('data', (data) => console.log(`Выход: "${data}"`));
 readable.on('data', (data) => console.log(`Вход: "${data}"`));
@@ -17,12 +17,11 @@ readable.pipe(upper);
 setTimeout(() => {
     console.log("\n=== Демонстрация Object Mode ===");
     const students = [
-        { id: 1, name: "Иван", group: "ББМО-01-23" },
+        { id: 1, name: "Вадим", group: "ББМО-01-23" },
         { id: 2, name: "Мария", group: "ББМО-02-23" },
         { id: 3, name: "Петр", group: "ББМО-01-23" }
     ];
     const r2 = Readable.from(students);
-    r2.on('data', (d) => console.log(`[OBJECT]`, d));
     
     console.log("После фильтрации (только ББМО-01-23):");
     const filter = new Transform({
