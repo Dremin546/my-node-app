@@ -4,9 +4,15 @@ async function errorHandler(ctx, next) {
   } catch (err) {
     console.error(`[ERROR] ${err.message}`);
 
-    if (err.code === 11000) {
+    if (err.code === 'ER_DUP_ENTRY' || err.code === 11000) {
       ctx.status = 409;
-      ctx.body = { error: "Conflict", message: "Документ с таким уникальным полем уже существует" };
+      ctx.body = { error: "Conflict", message: "Запись с таким ключом уже существует" };
+    } else if (err.code === 'ER_NO_REFERENCED_ROW' || err.code === 'ER_NO_REFERENCED_ROW_2') {
+      ctx.status = 400;
+      ctx.body = { error: "Bad Request", message: "Нарушение связи внешнего ключа" };
+    } else if (err.code === 'ECONNREFUSED') {
+      ctx.status = 503;
+      ctx.body = { error: "Service Unavailable", message: "База данных недоступна" };
     } else {
       ctx.status = err.status || 500;
       ctx.body = {
