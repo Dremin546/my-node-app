@@ -4,7 +4,7 @@ async function errorHandler(ctx, next) {
   } catch (err) {
     console.error(`[ERROR] ${err.message}`);
 
-    if (err.code === 'ER_DUP_ENTRY') {
+    if (err.code === 'ER_DUP_ENTRY' || err.code === 11000) {
       ctx.status = 409;
       ctx.body = { error: "Conflict", message: "Запись с таким ключом уже существует" };
     } else if (err.code === 'ER_NO_REFERENCED_ROW' || err.code === 'ER_NO_REFERENCED_ROW_2') {

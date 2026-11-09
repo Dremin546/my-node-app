@@ -11,6 +11,11 @@
     "mysql2": "node mysql-crud.js",
     "mysql3": "node mysql-errors.js",
     "mysql4": "node mysql-dao.js",
+    "mongo:start": "node mongo-daemon.js",
+    "mongo1": "node mongodb-connect.js",
+    "mongo2": "node mongodb-crud.js",
+    "mongo3": "node mongodb-advanced.js",
+    "mongo4": "node mongodb-transactions.js",
     "cli1": "node cli1.js",
     "cli2": "node cli2.js",
     "cli3": "node cli3.js",
@@ -53,8 +58,11 @@
     "jsonwebtoken": "^9.0.3",
     "koa": "^3.2.1",
     "koa-bodyparser": "^4.4.1",
+    "mongodb": "^7.8.0",
+    "mongodb-memory-server": "^11.3.0",
     "mysql2": "^3.24.6",
     "ora": "^5.4.1",
-    "swagger-ui-express": "^5.0.1"
+    "swagger-ui-express": "^5.0.1",
+    "ws": "^8.22.1"
   }
 }
