@@ -1,0 +1,3 @@
+Test data for pipe and pipeline demonstration.
+This should be copied correctly.
+Final check.
